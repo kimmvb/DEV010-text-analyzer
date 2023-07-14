@@ -9,6 +9,34 @@
 
 <body>
   <script src="index.js" type="module"></script>
-  <h1>Holaaaaa!!!!!</h1>
-</body>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+  <section id="counter">
+    <ul>
+      <li data-testid="word-count">Palabras:</li>
+      <li data-testid="character-count">Caracteres:</li>
+      <li data-testid="character-no-spaces-count">Caracteres sin espacios:</li>
+      <li data-testid="number-count">Números:</li>
+      <li data-testid="number-sum">Suma de números:</li>
+      <li data-testid="word-length-average">Promedio de longitud:</li>
+    </ul>
+  </section>
+  <section id="textarea">
+    <textarea name="user-input" rows="7" cols="60">
+    </textarea>
+  </section>
+  <br>
+  <section id="clean">
+    <button id="reset-button" type="button" onclick="document.location.reload()">Limpiar
+    </button>
+  </section>
+  <br>
+  <hr>
+  <footer>
+    <p>¡Gracias por utilizarme!</p>
+    <h6>Kimberly Vélez</h6>
+  </footer>
+</body> 
+
 </html>
