@@ -2,28 +2,32 @@
 const analyzer = {  
 
   getWordCount: (text) => {
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    function wordCount() {  
-      const totaltext = document.querySelector('textarea[name="user-input"]').value;
-      let count1 = 0;
-      const splittext = totaltext.split(' ');
-      for (let i = 0; i < splittext.length; i++) {
-        if (splittext[i] !== "") {
-          count1++;
-        }
+    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`
+    
+    //text = document.querySelector('textarea[name="user-input"]').value;  
+    let count1 = 0;
+    const splittext = text.split(' ');
+    for (let i = 0; i < splittext.length; i++) {
+      if (splittext[i] !== "") {
+        count1++;
       }
-      document.querySelector(".word-count").innerHTML = "Palabras: " + count1;
-      document.querySelector(".character-count").innerHTML = "Caracteres: " + totaltext.length;
-      document.querySelector(".character-no-spaces-count").innerHTML = "Caracteres sin espacios: " + totaltext.trim().length;
     }
+    return count1; 
   },
 
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-
+     
+    const splittext = text.length
+    
+    return splittext
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    const splittext = text.trim().length
+    
+    return splittext
+
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.

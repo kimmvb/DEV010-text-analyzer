@@ -1,6 +1,18 @@
 body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
     
+#big-container {
+    
+    display: block;
+    margin-left: 100px;;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    background: #faf4f7;
+    box-shadow:  27px 27px 54px #d5cfd2,
+             -27px -27px 54px #ffffff;
+}
 header {
     text-align: center;
 }
@@ -9,42 +21,110 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
+    border: 2px solid rgb(77, 71, 71);
     border-radius: 25px;
-    background: #f7f2f2;
+    background: linear-gradient(145deg, #ffe6f3, #ddc2cc);;
+    box-shadow: 27px 27px 54px #d0b7c1,
+    -27px -27px 54px #fff7ff;
     padding: 25px 25px 25px 25px;
     text-align: center;
     list-style-type: none;
+    min-width: 75%;
+    max-width: 75%;
+}
+
+.word-count {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(77, 71, 71);
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffbee0, #ddc2cc);;
+    padding: 1px 1px;
+    text-align: center;
+    list-style-type: none;
+    width: 25%;
+    min-width: 75%;
+}
+
+.character-count {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(77, 71, 71);
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffbee0, #ddc2cc);;
+    padding: 1px 1px;
+    text-align: center;
+    list-style-type: none;
+    width: 25%;
+    min-width: 75%;
+}
+.character-no-spaces-count {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(77, 71, 71);
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffbee0, #ddc2cc);;
+    padding: 1px 1px;
+    text-align: center;
+    list-style-type: none;
+    width: 25%;
+    min-width: 75%;
+}
+
+.number-count {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(77, 71, 71);
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffbee0, #ddc2cc);;
+    padding: 1px 1px;
+    text-align: center;
+    list-style-type: none;
+    width: 25%;
+    min-width: 75%;
 }
 
 textarea[name="user-input"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     box-sizing: border-box;
     border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 10px;
     background: #f7f2f2;
     padding: 25px 25px 25px 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-
+    resize: none;
    
+       
 }
 #reset-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
 }
+
+br {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 p {
     text-align: center;
     font-size: 16px;
     font-style: oblique;
     font-weight: 500;
+    padding-top: 20px;
 }
 h6 {
     text-align: right;
-    font-weight: 600;
+    font-weight: 100;
+    padding-right: 25px;
+   
 }
