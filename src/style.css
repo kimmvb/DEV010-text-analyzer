@@ -17,8 +17,9 @@ header {
     text-align: center;
 }
 
-ul {
+ul[data-testid="metrics"] {
     display: block;
+    align-content:space-around;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid rgb(77, 71, 71);
@@ -33,7 +34,7 @@ ul {
     max-width: 75%;
 }
 
-.word-count {
+.metrics-elements {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -43,49 +44,8 @@ ul {
     padding: 1px 1px;
     text-align: center;
     list-style-type: none;
-    width: 25%;
-    min-width: 75%;
-}
-
-.character-count {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid rgb(77, 71, 71);
-    border-radius: 25px;
-    background: linear-gradient(145deg, #ffbee0, #ddc2cc);;
-    padding: 1px 1px;
-    text-align: center;
-    list-style-type: none;
-    width: 25%;
-    min-width: 75%;
-}
-.character-no-spaces-count {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid rgb(77, 71, 71);
-    border-radius: 25px;
-    background: linear-gradient(145deg, #ffbee0, #ddc2cc);;
-    padding: 1px 1px;
-    text-align: center;
-    list-style-type: none;
-    width: 25%;
-    min-width: 75%;
-}
-
-.number-count {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid rgb(77, 71, 71);
-    border-radius: 25px;
-    background: linear-gradient(145deg, #ffbee0, #ddc2cc);;
-    padding: 1px 1px;
-    text-align: center;
-    list-style-type: none;
-    width: 25%;
-    min-width: 75%;
+    width: 40%;
+    min-width: 40%;
 }
 
 textarea[name="user-input"] {
@@ -113,6 +73,10 @@ textarea[name="user-input"] {
 br {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
