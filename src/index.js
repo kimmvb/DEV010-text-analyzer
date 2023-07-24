@@ -1,9 +1,7 @@
 
 import analyzer from './analyzer.js';
 
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-
-//variable que es igual a "llamar" al doc. HTML contador de palabras
+//Variables sobre los querySelectors de los hijos de la lista
 const wordCount = document.querySelector('li[data-testid="word-count"]');
 const characterCount = document.querySelector('li[data-testid="character-count"]');
 const characterCountNoSpaces = document.querySelector('li[data-testid="character-no-spaces-count"]');
@@ -11,8 +9,10 @@ const numberCount = document.querySelector('li[data-testid="number-count"]');
 const numberSum = document.querySelector('li[data-testid="number-sum"]');
 const averageWordLength = document.querySelector('li[data-testid="word-length-average"]');
 
-const textarea = document.querySelector('textarea[name="user-input"]');//variable que es igual a "llamar" al doc. HTML el área de texto
+//Variable que llama al contenido del textarea
+const textarea = document.querySelector('textarea[name="user-input"]');
 
+//Event listener que conecta el soltar cada tecla con los métodos del analizer. Esto para update el contador, de acuerdo al value del textarea.
 textarea.addEventListener("keyup", function (event) { 
   const quantityWords = analyzer.getWordCount(event.target.value); 
   wordCount.innerHTML = "Palabras: " + quantityWords;
@@ -27,18 +27,9 @@ textarea.addEventListener("keyup", function (event) {
   const totalAverageWordLength = analyzer.getAverageWordLength(event.target.value);
   averageWordLength.innerHTML = "Promedio de longitud: " + totalAverageWordLength;
 } );
-//conecto la variable anterior del área de texto con un evento que sucede por apretar alguna tecla (keyup) con una función con parámetro evento que sigue las siguientes instrucciones: 1. crea una variable que contiene el número total de palabras, gracias a llamar a el proceso del analizer getWordCount(objeto,método), teniendo como propiedad traer el valor(value) del text.area   2. se llama all contenido de la varible wordCount para cambiarlo por la cantidad de palabras
 
-
-
-
-
-
-
-
-
-
-//Botón//
+//Botón
+//Primero se conecta con DOM el botón con un event listener que reacciona al click y se obtiene la función de reload, que refresca la página.
 
 document.getElementById("reset-button").addEventListener("click", reload)
 
