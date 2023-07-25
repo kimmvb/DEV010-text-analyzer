@@ -6,10 +6,10 @@ const analyzer = {
     const splittext = text.split(' '); //Texto dividido en strings dentro de un array
     //console.log (splittext);
     for (let i = 0; i < splittext.length; i++) {
-      if (splittext[i] !== "") {
+      if (isNaN(splittext[i]) && splittext[i] !== "") {
         count++;
       }
-    } //Bucle que recorre todo el array. Cada vez que pasa el bucle checa si los elementos del array no son iguales a "nada", entonces se suma uno al contador.
+    } //Bucle que recorre todo el array. Cada vez que pasa el bucle checa si los elementos del array no son iguales a "nada" o no son un número, entonces se suma uno al contador.
     return count; //Se retorna el valor final del contador
   },
 
